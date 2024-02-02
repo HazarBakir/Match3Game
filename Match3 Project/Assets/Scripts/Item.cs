@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+[CreateAssetMenu(menuName = "Match-3/Item")]
+public sealed class Item : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int value;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Sprite sprite;
 }
